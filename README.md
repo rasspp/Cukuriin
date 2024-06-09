@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Cukuriin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Costumer: "Mas bisa kerumah ga potong nya, ada banyak anak-anak nih yang mau potong rambut" <br>
+Barber: "waduh gabisa mas, soalnya disini juga lagi rame, besok mungkin bisa mas nanti temen saya yang dateng" <br>
+Costumer: "oke gapapa deh, boleh liat orang nya ga mas? biar saya tau orang nya" <br>
+Barber: "Oh boleh banget mas, nih cek disini aja lebih mudah dan bisa juga liat hasil potongan kita mas" <br>
+Costumer: "wahh keren juga nih website nya mas", Like.
 
-Currently, two official plugins are available:
+Buruan cek di ???.com (belum deploy awokwok)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Daftar Isi
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Fitur](#footer)
+- [Instalasi](#instalasi)
+- [Penggunaan](#penggunaan)
+- [Kontribusi](#kontribusi)
+- [Lisensi](#lisensi)
 
-- Configure the top-level `parserOptions` property like this:
+## Fitur
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+* [Cantumkan fitur-fitur utama proyek Anda]
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Instalasi
+
+1. [Jelaskan langkah-langkah instalasi proyek secara detail]
+
+## Penggunaan
+
+1. [Berikan contoh penggunaan proyek Anda dengan kode atau penjelasan yang jelas]
+
+## Kontribusi
+
+[Jelaskan bagaimana orang lain dapat berkontribusi pada proyek Anda, misalnya dengan melaporkan bug, mengirimkan pull request, atau memberikan saran.]
+
+## Lisensi 
+<h1 class="footer">footer</h1>
+[Sebutkan lisensi yang Anda gunakan untuk proyek Anda, misalnya MIT License, GPL, atau Apache License.]
