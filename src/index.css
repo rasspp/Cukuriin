@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply py-2 px-4 font-semibold rounded-lg shadow-md;
+  }
+  .inside-neu {
+    @apply bg-gray-800;
+    box-shadow:   5px 5px 10px #131921,
+    -5px -5px 10px #2b394d;
+  }
+  .inside-neu-input {
+    @apply bg-gray-800;
+    background: linear-gradient(145deg, #1c2532, #212c3b);
+    box-shadow:  6px 6px 12px #161d27,
+                 -6px -6px 12px #283547;
+  }
+  .inside-neu-input:focus {
+    @apply bg-gray-800;
+    box-shadow: inset 5px 5px 9px #0c1016,
+    inset -5px -5px 9px #324258;
+  }
+}
+
+@layer base {
+  :root {
+    @apply bg-gray-200;
+  }
+}
+
+
+@layer utilities {
+    .btn-primary {
+        @apply bg-blue-500 text-white;
+    }
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+ }
