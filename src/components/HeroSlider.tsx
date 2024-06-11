@@ -51,7 +51,7 @@ const HeroSlider: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className={`h-full w-full bg-cover bg-center bg-blue-500)`}
+            className={`h-full w-full bg-cover bg-center bg-blue-500 )`}
             style={{
               backgroundImage: `url('${images[2]}')`,
             }}
@@ -77,10 +77,10 @@ const HeroSlider: React.FC = () => {
             membantu membuat momen spesial Anda lebih berkesan.
           </p>
           <a
-            href="#calendar"
-            className="py-2 px-5 text-white rounded-md border bg-gray-800 inside-neu-input w-fit shadow-xl scroll-smooth"
+            href="#service"
+            className="py-2 px-5 text-white rounded-md border bg-gray-800 inside-neu-input inside-neu-hover w-fit shadow-xl scroll-smooth"
           >
-            Cek Gaya Rambut
+            Cek Layanan Kami
           </a>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Service from '../components/Service';
 import Gallery from '../components/Gallery';
 import ContactUs from '../components/ContactUs';
 import HeroSlider from '../components/HeroSlider';
+import Barbers from '../components/Barbers';
 
 const LandingPage: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage: React.FC = () => {
         <AboutUs />
         <Service />
         <Gallery />
+        <Barbers />
         <ContactUs />
       </div>
     </div>

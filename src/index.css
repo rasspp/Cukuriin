@@ -6,38 +6,87 @@
   .btn {
     @apply py-2 px-4 font-semibold rounded-lg shadow-md;
   }
+
   .inside-neu {
     @apply bg-gray-800;
-    box-shadow:   5px 5px 10px #131921,
-    -5px -5px 10px #2b394d;
+    box-shadow: 5px 5px 10px #131921,
+      -5px -5px 10px #2b394d;
   }
+
   .inside-neu-input {
     @apply bg-gray-800;
     background: linear-gradient(145deg, #1c2532, #212c3b);
-    box-shadow:  6px 6px 12px #161d27,
-                 -6px -6px 12px #283547;
+    box-shadow: 6px 6px 12px #161d27,
+      -6px -6px 12px #283547;
   }
-  .inside-neu-input:focus {
+
+  .inside-neu-inset {
     @apply bg-gray-800;
     box-shadow: inset 5px 5px 9px #0c1016,
-    inset -5px -5px 9px #324258;
+      inset -5px -5px 9px #324258;
   }
+
+  .inside-neu-focus:focus {
+    @apply bg-gray-800;
+    box-shadow: inset 5px 5px 9px #0c1016,
+      inset -5px -5px 9px #324258;
+  }
+
+  .inside-neu-active:active {
+    @apply bg-gray-800;
+    box-shadow: inset 5px 5px 9px #0c1016,
+      inset -5px -5px 9px #324258;
+
+  }
+
+  .inside-neu-hover:hover {
+    @apply bg-gray-800;
+    box-shadow: inset 5px 5px 9px #0c1016,
+      inset -5px -5px 9px #324258;
+
+  }
+
+
+
+
 }
 
 @layer base {
   :root {
     @apply bg-gray-200;
   }
+
+
 }
 
 
 @layer utilities {
-    .btn-primary {
-        @apply bg-blue-500 text-white;
-    }
+  .text-main {
+    @apply text-teal-400;
+  }
+
+  .main-border {
+    @apply border border-teal-600;
+  }
 }
 
 
 ::-webkit-scrollbar {
-    display: none;
- }
+  display: none;
+}
+
+/* Custom Style for Barbers.tsx */
+.swiper {
+  padding: 30px 10px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: lightblue !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: lightblue !important;
+}
+
+/* End Custom Style for Barbers.tsx */

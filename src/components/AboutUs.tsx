@@ -10,25 +10,31 @@ export const AboutUs: React.FC = () => {
 
   return (
     <section id="about-us" className="about-us min-h-screen pb-12 pt-20 bg-gray-800">
-        <div className="md:max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold text-white mb-10">Tentang Kami</h2>
+      <div className="md:max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl font-extrabold text-white mb-6">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
+            Tentang Kami
+          </span>
+        </h2>
 
-          <div className="container w-full grid grid-cols-2">
-            <div className="image relative w-full h-96 p-10 overflow-hidden -rotate-12">
-              <img className="absolute border inside-neu h-52 -left-[4.3rem] -top-4 z-10 hover:border-blue-400 hover:contrast-125  hover:origin-bottom-left rotate-12 transition-all hover:z-30" src={`${images[0]}`} alt={`hai`} />
-              <img className="absolute border inside-neu h-44 left-32 -bottom-9 z-10 hover:border-blue-400 hover:contrast-125 hover:saturate-200 hover:origin-bottom-right rotate-12 transition-all hover:z-30" src={`${images[1]}`} alt={`hai`} />
-              <img className="absolute border inside-neu h-72 right-32 -top-10 z-20 hover:border-blue-400 hover:contrast-125 hover:sepia hover:origin-top-left rotate-12 transition-all hover:z-30" src={`${images[2]}`} alt={`hai`} />
-              <img className="absolute border inside-neu h-72 -right-12 bottom-0 z-10 hover:border-blue-400 hover:contrast-125 hover:saturate-200 hover:origin-top-left rotate-12 transition-all hover:z-30" src={`${images[3]}`} alt={`hai`} />
-            </div>
+        <div className="container w-full grid md:grid-cols-2 mt-20">
+          <div className="image relative w-full h-96 md:p-10 md:overflow-hidden -rotate-12 scale-[70%] sm:scale-75 md:scale-100 sm:hover:scale-100">
+            <img className="absolute border inside-neu h-52 -left-[4.3rem] -top-4 z-10 hover:main-border hover:contrast-125  hover:origin-bottom-left rotate-12 transition-all hover:z-30" src={`${images[0]}`} alt={`hai`} loading="lazy" />
+            <img className="absolute border inside-neu h-44 left-[8.5rem] -bottom-9 z-10 hover:main-border hover:contrast-125 hover:saturate-200 hover:origin-bottom-right rotate-12 transition-all hover:z-30" src={`${images[1]}`} alt={`hai`} loading="lazy" />
+            <img className="absolute border inside-neu h-72 left-[15.9rem] -top-10 z-20 hover:main-border hover:contrast-125 hover:sepia hover:origin-top-left rotate-12 transition-all hover:z-30" src={`${images[2]}`} alt={`hai`} loading="lazy" />
+            <img className="absolute border inside-neu h-72 left-[27rem] bottom-0 z-10 hover:main-border hover:contrast-125 hover:saturate-200 hover:origin-top-left rotate-12 transition-all hover:z-30" src={`${images[3]}`} alt={`hai`} loading="lazy" />
+          </div>
 
-            <p className="text-lg text-gray-400 p-7">
-              Selamat datang di Cukuriin, tempat di mana gaya dan keahlian bertemu. 
-              Kami berkomitmen untuk memberikan potongan rambut terbaik dengan 
-              layanan yang ramah dan profesional. Setiap pelanggan adalah prioritas 
+          <div className="w-full flex flex-col items-center justify-center text-center mt-32 md:mt-0 text-white px-10">
+            <p className="w-10/12 text-xl text-center text-gray-300 mb-12 -mt-20">
+              Selamat datang di Cukuriin, tempat di mana gaya dan keahlian bertemu.
+              Kami berkomitmen untuk memberikan potongan rambut terbaik dengan
+              layanan yang ramah dan profesional. Setiap pelanggan adalah prioritas
               kami, dan kami bangga menjadi bagian dari transformasi gaya Anda.
             </p>
           </div>
         </div>
+      </div>
     </section>
   );
 };
