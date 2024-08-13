@@ -1,4 +1,5 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 export const AboutUs: React.FC = () => {
   const images = [
@@ -8,12 +9,14 @@ export const AboutUs: React.FC = () => {
     'https://images.unsplash.com/photo-1640301133857-c4bc5789c1bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGJhcmJlcnxlbnwwfHwwfHx8Mg%3D%3D'
   ];
 
+  const [t, i18n] = useTranslation("global")
+
   return (
     <section id="about-us" className="about-us min-h-screen pb-12 pt-20 bg-gray-800">
       <div className="md:max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold text-white mb-6">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
-            Tentang Kami
+            Tentang Kami {t("about-us.title")}
           </span>
         </h2>
 

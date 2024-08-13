@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
     <nav className="fixed z-50 top-0 left-0 w-full border-b border-teal-600 md:px-10 bg-gray-800 inside-neu p-4">
       <div className="container relative mx-auto flex justify-between items-center">
         <Link to="/" className="bg-clip-text bg-gradient-to-r from-teal-400 to-red-500 text-2xl text-transparent font-bold">
-          Cukur<span className="text-orange-400">ii</span>n
+          Barber Any<span className="text-orange-400">where</span>
         </Link>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
