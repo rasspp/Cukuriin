@@ -35,7 +35,7 @@ const HeroSlider: React.FC = () => {
       >
         <SwiperSlide>
           <div
-            className={`h-full w-full bg-cover bg-center bg-blue-500)`}
+            className={`h-full w-full bg-cover bg-center bg-blue-500`}
             style={{
               backgroundImage: `url('${images[0]}')`,
             }}
@@ -43,7 +43,7 @@ const HeroSlider: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className={`h-full w-full bg-cover bg-center bg-blue-500)`}
+            className={`h-full w-full bg-cover bg-center bg-blue-500`}
             style={{
               backgroundImage: `url('${images[1]}')`,
             }}
@@ -51,7 +51,7 @@ const HeroSlider: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className={`h-full w-full bg-cover bg-center bg-blue-500 )`}
+            className={`h-full w-full bg-cover bg-center bg-blue-500`}
             style={{
               backgroundImage: `url('${images[2]}')`,
             }}
@@ -59,7 +59,7 @@ const HeroSlider: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className={`h-full w-full bg-cover bg-center bg-blue-500)`}
+            className={`h-full w-full bg-cover bg-center bg-blue-500`}
             style={{
               backgroundImage: `url('${images[3]}')`,
             }}
@@ -69,18 +69,17 @@ const HeroSlider: React.FC = () => {
 
       <div className="absolute hero-content top-0 w-full h-full z-10 bg-gradient-to-r from-gray-800 to-transparent ">
         <div className="mt-44 w-11/12 ml-[3%] md:ml-40 h-8/12  md:w-6/12 rounded-2xl p-10">
-          <h2 className="text-6xl font-bold tracking-wide text-blue-400">
-            Cukur<span className="text-yellow-600">ii</span>n
+          <h2 className=" bg-clip-text bg-gradient-to-r from-teal-400 to-red-500 text-6xl text-transparent font-bold">
+          Barber Any<span className="text-orange-400">where</span>
           </h2>
           <p className="text-lg pt-3 mb-5 text-blue-200">
-            Nikmati pengalaman mencukur terbaik yang pernah ada, kami siap
-            membantu membuat momen spesial Anda lebih berkesan.
+            Enjoy the best shaving experience ever, we are ready to help make your special moments more memorable.
           </p>
           <a
             href="#service"
             className="py-2 px-5 text-white rounded-md border bg-gray-800 inside-neu-input inside-neu-hover w-fit shadow-xl scroll-smooth"
           >
-            Cek Layanan Kami
+            Check Our Services
           </a>
         </div>
       </div>

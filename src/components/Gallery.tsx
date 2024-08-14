@@ -4,7 +4,7 @@ export const Gallery: React.FC = () => {
   const images = [
     {
       url: 'https://images.unsplash.com/photo-1568339434343-2a640a1a9946?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGhhaXIlMjBjdXR8ZW58MHx8MHx8fDA%3D',
-      caption: 'Motif Garis'
+      caption: 'Stripe Pattern'
     },
     {
       url: 'https://images.unsplash.com/photo-1578390432942-d323db577792?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhhaXJzdHlsZXxlbnwwfHwwfHx8MA%3D%3D',
@@ -16,15 +16,15 @@ export const Gallery: React.FC = () => {
     },
     {
       url: 'https://images.unsplash.com/photo-1602641902219-622a1b9a257a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fGhhaXIlMjBtYW58ZW58MHx8MHx8fDA%3D',
-      caption: 'Motif Berpola'
+      caption: 'Patterned Style'
     },
     {
       url: 'https://images.unsplash.com/photo-1562004760-aceed7bb0fe3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhhaXIlMjBtYW58ZW58MHx8MHx8fDA%3D',
-      caption: 'Kantoran'
+      caption: 'Corporate'
     },
     {
       url: 'https://images.unsplash.com/photo-1607276252614-e874c044e09b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGhhaXIlMjBtYW58ZW58MHx8MHx8fDA%3D',
-      caption: 'Profesional'
+      caption: 'Professional'
     }
   ];
 
@@ -42,12 +42,13 @@ export const Gallery: React.FC = () => {
     <section id="gallery" className="gallery min-h-screen pb-12 pt-20 bg-gray-800 inside-neu">
       <div className="md:max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold text-white mb-6">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
-            Gallery Gaya Rambut
+          <span className="bg-clip-text bg-gradient-to-r from-teal-400 to-red-500 text-transparent font-bold">
+            Hair Style 
+            <span className="bg-clip-text bg-gradient-to-r from-red-500 to-orange-400 text-transparent">Gallery</span>
           </span>
         </h2>
         <p className="text-xl text-center text-gray-300 mb-12">
-          Jelajahi berbagai gaya rambut yang kami tawarkan.
+          Explore the various hair styles we offer.
         </p>
         <div className="w-11/12 md:w-full flex flex-wrap justify-center gap-6">
           {images.slice(0, visibleCount).map((image, index) => (
@@ -70,18 +71,20 @@ export const Gallery: React.FC = () => {
           {visibleCount < images.length && (
             <button
               onClick={handleLoadMore}
-              className="px-6 py-2 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600 transition duration-300"
+              className="px-6 py-2 border hover:border-orange-500 bg-clip-text bg-gradient-to-r from-teal-400 to-red-500 text-transparent font-bold rounded transition duration-300"
             >
               Load More
             </button>
           )}
           {visibleCount > 3 && (
+            <a href="#gallery">
             <button
               onClick={handleShowLess}
-              className="ml-4 px-6 py-2 bg-red-500 text-white font-semibold rounded hover:bg-red-600 transition duration-300"
+              className="ml-4 px-6 py-2 border hover:border-orange-500 bg-clip-text bg-gradient-to-r from-red-500 to-orange-400 text-transparent font-bold rounded  transition duration-300"
             >
               Show Less
             </button>
+              </a>
           )}
         </div>
       </div>

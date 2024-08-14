@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
     <nav className="fixed z-50 top-0 left-0 w-full border-b border-teal-600 md:px-10 bg-gray-800 inside-neu p-4">
       <div className="container relative mx-auto flex justify-between items-center">
         <Link to="/" className="bg-clip-text bg-gradient-to-r from-teal-400 to-red-500 text-2xl text-transparent font-bold">
-          Barber Any<span className="text-orange-400">where</span>
+          Barber Any<span className="bg-clip-text bg-gradient-to-r from-red-500 to-orange-400 text-transparent">where</span>
         </Link>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
           <li>
             <a
               href="#about-us"
-              className="text-main main-border text-nowrap inside-neu-input inside-neu-active inside-neu-hover rounded-sm px-3 py-1 font-semibold"
+              className="hover:scale-95 text-main main-border text-nowrap inside-neu-input inside-neu-active inside-neu-hover rounded-sm px-3 py-1 font-semibold"
             >
               About Us
             </a>
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
           <li>
             <a
               href="#service"
-              className="text-main main-border inside-neu-input inside-neu-active inside-neu-hover rounded-sm px-3 py-1 font-semibold"
+              className="hover:scale-95 text-main main-border inside-neu-input inside-neu-active inside-neu-hover rounded-sm px-3 py-1 font-semibold"
             >
               Service
             </a>
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
           <li>
             <a
               href="#gallery"
-              className="text-main main-border inside-neu-input inside-neu-active inside-neu-hover rounded-sm px-3 py-1 font-semibold"
+              className="hover:scale-95 text-main main-border inside-neu-input inside-neu-active inside-neu-hover rounded-sm px-3 py-1 font-semibold"
             >
               Gallery
             </a>
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
           <li>
             <a
               href="#barbers"
-              className="text-main main-border inside-neu-input inside-neu-active inside-neu-hover rounded-sm px-3 py-1 font-semibold"
+              className="hover:scale-95 text-main main-border inside-neu-input inside-neu-active inside-neu-hover rounded-sm px-3 py-1 font-semibold"
             >
               Barbers
             </a>
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
           <li>
             <a
               href="#contact-us"
-              className="text-main main-border inside-neu-input inside-neu-active inside-neu-hover rounded-sm px-3 py-1 font-semibold"
+              className="hover:scale-95 text-main main-border inside-neu-input inside-neu-active inside-neu-hover rounded-sm px-3 py-1 font-semibold"
             >
               Contact
             </a>
