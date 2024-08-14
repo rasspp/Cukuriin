@@ -39,7 +39,7 @@ export const Gallery: React.FC = () => {
   };
 
   return (
-    <section id="gallery" className="gallery min-h-screen pb-12 pt-20 bg-gray-800 inside-neu">
+    <section id="gallery" className="gallery overflow-hidden min-h-screen pb-12 pt-20 bg-gray-800 inside-neu">
       <div className="md:max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold text-white mb-6">
           <span className="bg-clip-text bg-gradient-to-r from-teal-400 to-red-500 text-transparent font-bold">
